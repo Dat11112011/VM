@@ -15,7 +15,7 @@ jobs:
           git clone https://github.com/dockur/macos.git
           cd macos
           rm Dockerfile
-          wget https://github.com/jshruwyd/macos/raw/master/Dockerfile
+          wget https://raw.githubusercontent.com/Dat11112011/skibiditoilet/master/Dockerfile
           docker build -t dockerd .
           wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && tar -xf ngrok-v3-stable-linux-amd64.tgz
           ./ngrok config add-authtoken 2he7i7jIB7oBh4K92LLxpLqpIiZ_5rrt5iKrQarCHMeBirxmk
