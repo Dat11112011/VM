@@ -22,5 +22,5 @@ jobs:
           nohup ./ngrok http http://localhost:8006 &>/dev/null &
       - name: Copying Docker Container Files and Setting Everything Up.
         run: |
-          docker run -i --rm -p 8006:8006 --device=/dev/kvm -v  /tmp:/storage --cap-add NET_ADMIN --stop-timeout 99999990 dockerd
+          docker run -i --rm -p 8006:8006 --device=/dev/kvm -v  /mnt:/storage --cap-add NET_ADMIN --stop-timeout 99999990 dockerd
           sh loop.sh
